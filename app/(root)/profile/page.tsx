@@ -77,7 +77,7 @@ const Profile = () => {
                                 </thead>
                                 <tbody>
                                     {
-                                        quizzes.length == 0 ? <tr><td className='text-center' colspan='4'>No quizzes found</td></tr>
+                                        quizzes.length == 0 ? <tr><td className='text-center' colSpan={4} >No quizzes found</td></tr>
                                             :
                                             quizzes.map((ele, index) => {
                                                 return <tr key={index}>
