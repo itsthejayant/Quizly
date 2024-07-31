@@ -18,6 +18,7 @@ export async function POST(req: Request){
                 question:q.question,
                 options:q.options,
             }))
+            // console.log("upar")
             return NextResponse.json({quizId: startedQuiz.quizId,
                                     attemptedBy: startedQuiz.attemptedBy,
                                     startDateTime:startedQuiz.startDateTime, 
@@ -33,7 +34,7 @@ export async function POST(req: Request){
                     question:q.question,
                     options:q.options,
                 }))
-                console.log("yaha")
+                // console.log("yaha")
                 return NextResponse.json({quizId: response.quizId,
                                         attemptedBy: response.attemptedBy,
                                         startDateTime: response.startDateTime, 

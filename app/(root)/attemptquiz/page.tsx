@@ -134,11 +134,11 @@ const AttemptQuiz = () => {
             </div>
             {
                 isAlert &&
-                <div className='h-screen w-screen bg-opacity-70  bg-black z-40 fixed top-0 left-0' >
+                <div className='h-screen w-screen bg-opacity-90  bg-black z-40 fixed top-0 left-0' >
                     {/* style={{ 'backdrop-filter': 'blur(5px);' }} */}
-                    <div className='w-1/3 text-center bg-black  border border-1 border-white shadow-2xl  shadow-black z-50 fixed top-1/3 left-1/3 py-4' >
-                        <h1 className=' text-white p-3' >You are about to begin the quiz.<br /> Are you sure?</h1>
-                        <p className=' text-red-700 p-1 text-sm'> Quiz once started cannot be stopped in middle</p>
+                    <div className='w-1/3 text-center bg-white bg-opacity-95  border border-1 border-white rounded-lg shadow-2xl  shadow-black z-50 fixed top-1/3 left-1/3 py-4' >
+                        <h1 className=' text-black p-3 font-semibold' >You are about to begin the quiz.<br /> Are you sure?</h1>
+                        <p className=' text-red-700 p-1 text-sm font-semibold'> Quiz once started cannot be stopped in middle</p>
                         <div className='flex justify-evenly m-2' >
                             <Button variant={'outline'} onClick={() => setIsAlert(false)}>Cancel</Button>
                             <Button size={'lg'} onClick={() => handleClick()} >Start</Button>
