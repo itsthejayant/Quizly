@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 
 const AddUsers = () => {
     const router = useRouter();
-    const [emails, setEmails] = useState([]);
+    const [emails, setEmails] = useState<string[]>([]);
     // const [emails, setEmails] = useState(['d', 's', 'a']);
     const [query, setQuery] = useState<string>("");
     const [hostButton, setHostButton] = useState("Host Quiz🎉")
